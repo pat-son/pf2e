@@ -1644,6 +1644,7 @@
             "FixedProficiency": "Fixed Proficiency",
             "FlatModifier": "Flat Modifier",
             "GrantItem": "Grant Item",
+            "GrantSpellcasting": "Grant Spellcasting",
             "Immunity": "Immunity",
             "ItemAlteration": "Item Alteration",
             "LoseHitPoints": "Lose Hit Points",

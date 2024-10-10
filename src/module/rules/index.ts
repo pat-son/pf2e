@@ -21,6 +21,7 @@ import { FastHealingRuleElement } from "./rule-element/fast-healing.ts";
 import { FixedProficiencyRuleElement } from "./rule-element/fixed-proficiency.ts";
 import { FlatModifierRuleElement } from "./rule-element/flat-modifier.ts";
 import { GrantItemRuleElement } from "./rule-element/grant-item/rule-element.ts";
+import { GrantSpellcastingRuleElement } from "./rule-element/grant-spellcasting.ts";
 import type { RuleElementOptions, RuleElementSchema, RuleElementSource } from "./rule-element/index.ts";
 import { ItemAlterationRuleElement } from "./rule-element/item-alteration/rule-element.ts";
 import { ImmunityRuleElement } from "./rule-element/iwr/immunity.ts";
@@ -71,6 +72,7 @@ class RuleElements {
         FixedProficiency: FixedProficiencyRuleElement,
         FlatModifier: FlatModifierRuleElement,
         GrantItem: GrantItemRuleElement,
+        GrantSpellcasting: GrantSpellcastingRuleElement,
         Immunity: ImmunityRuleElement,
         ItemAlteration: ItemAlterationRuleElement,
         LoseHitPoints: LoseHitPointsRuleElement,

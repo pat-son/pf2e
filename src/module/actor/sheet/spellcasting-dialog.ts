@@ -8,6 +8,7 @@ import * as R from "remeda";
 /** Dialog to create or edit spellcasting entries. It works on a clone of spellcasting entry, but will not persist unless the changes are accepted */
 class SpellcastingCreateAndEditDialog extends FormApplication<SpellcastingEntryPF2e<CreaturePF2e>> {
     constructor(object: SpellcastingEntryPF2e<CreaturePF2e>, options?: Partial<FormApplicationOptions>) {
+        console.trace(object);
         super(object.clone({}, { keepId: true }), options);
     }
 
@@ -117,6 +118,7 @@ class SpellcastingCreateAndEditDialog extends FormApplication<SpellcastingEntryP
 
     private async updateAndClose(): Promise<void> {
         const updateData = this.object.toObject();
+        console.log(JSON.parse(JSON.stringify(updateData)));
 
         if (!this.object.isPrepared) {
             delete updateData.system.prepared.flexible;
